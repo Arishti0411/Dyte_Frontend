@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>React App</title>
+  <style>
+    .ht {
+      position: absolute;
+      top: 250px;
+      left: 150px;
+    }
+
+    .ct {
+      position: absolute;
+      top: 250px;
+      left: 750px;
+    }
+
+    .jt {
+      position: absolute;
+      top: 250px;
+      left: 1350px;
+    }
+
+    .edi {
+      margin: auto;
+      width: 90%;
+    }
+
+    #p {
+      margin: auto;
+      width: 90%;
+    }
+
+    #ho {
+      background-color: #f44336;
+      margin: auto;
+      width: 90%;
+      font-size: 24px;
+      padding: 14px 40px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      width: 80%;
+
+    }
+
+    #ho:hover {
+      background-color: #4CAF50;
+      color: white;
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+  </style>
+</head>
+
+<body>
+  <button onclick="ho()" id="ho">Home</button><br>
+  <br>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <button onClick="hi()" class="ht"><img src="hicon.png" length="450" width="340" /><br>
+    <h3>index.html</h3>
+  </button>
+  <button onClick="cs()" class="ct"><img src="icss.png" length="450" width="340" /><br>
+    <h3>index.css</h3>
+  </button>
+  <button onClick="js()" class="jt"><img src="ijs.png" length="450" width="340" /><br>
+    <h3>index.js</h3>
+  </button>
+  <div id="root"></div>
+  <script>
+    window.onload = function () {
+      document.getElementById('hl').style.display = 'none';
+      document.getElementById('p').style.display = 'none';
+      document.getElementById('cl').style.display = 'none';
+      document.getElementById('jl').style.display = 'none';
+      document.getElementById('ho').style.display = 'none';
+    };
+
+    function ho() {
+      document.getElementById('hl').style.display = 'none';
+      document.getElementById('p').style.display = 'none';
+      document.getElementById('cl').style.display = 'none';
+      document.getElementById('jl').style.display = 'none';
+      document.getElementById('ho').style.display = 'none';
+      document.getElementsByClassName('ht')[0].style.display = 'block';
+      document.getElementsByClassName('ct')[0].style.display = 'block';
+      document.getElementsByClassName('jt')[0].style.display = 'block';
+
+    }
+
+    function hi() {
+      document.getElementsByClassName('ht')[0].style.display = 'none';
+      document.getElementById('p').style.display = 'block';
+      document.getElementsByClassName('ct')[0].style.display = 'none';
+      document.getElementsByClassName('jt')[0].style.display = 'none';
+      document.getElementById('hl').style.display = 'block';
+      document.getElementById('ho').style.display = 'block';
+    }
+
+    function cs() {
+      document.getElementsByClassName('ht')[0].style.display = 'none';
+      document.getElementById('p').style.display = 'block';
+      document.getElementsByClassName('ct')[0].style.display = 'none';
+      document.getElementsByClassName('jt')[0].style.display = 'none';
+      document.getElementById('cl').style.display = 'block';
+      document.getElementById('ho').style.display = 'block';
+    }
+
+    function js() {
+      document.getElementsByClassName('ht')[0].style.display = 'none';
+      document.getElementById('p').style.display = 'block';
+      document.getElementsByClassName('ct')[0].style.display = 'none';
+      document.getElementsByClassName('jt')[0].style.display = 'none';
+      document.getElementById('jl').style.display = 'block';
+      document.getElementById('ho').style.display = 'block';
+    }
+  </script>
+</body>
+
+</html>
